@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>html-form-training</title>
+    <meta charset="UTF-8" >
+    <link rel="shortcut icon" href="img/xin.ico" >
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <img src="img/xin.ico" alt="heart">
+        </td>
+        <td>
+          <h1>一见钟情交友网欢迎您~</h1>
+        </td>
+      </tr>
+    </table>
+    <hr /><br />
+    <fieldset>
+      <legend>用户注册</legend>
+      <form action="#" method="get">
+        <table cellpadding="0" cellspacing="0">
+          <caption>❤<a href="">为您找寻生命中的那个Ta</a>❤</caption>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td>&emsp;手机号码&emsp;</td>
+              <td colspan="5">
+                <input type="text" name="tel" maxlength="11" pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$" placeholder="请输入手机号码" required autofocus>
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;用户名&emsp;</td>
+              <td colspan="5">
+                <input type="text" name="userid" maxlength="8" placeholder="请输入用户名" required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;电子邮箱&emsp;</td>
+              <td colspan="5">
+                <input type="email" name="email" placeholder="邮箱"  required="required" >
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;身份证号&emsp;</td>
+              <td colspan="5">
+                <input type="text" name="idcard" maxlength="18" placeholder="请输入身份证号码"  required="required" >
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;密保问题&emsp;</td>
+              <td colspan="5">
+                <select name="question">
+                  <option selected="selected">我母亲的姓名？</option>
+                  <option >我父亲的姓名？</option>
+                  <option >我的生日？</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;密保问题答案&emsp;</td>
+              <td colspan="5">
+                <input type="text" name="answer" placeholder="请输入密保问题答案"  required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;密码&emsp;</td>
+              <td colspan="5">
+                <input type="password" name="pw" maxlength="16" placeholder="请输入密码" required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;确认密码&emsp;</td>
+              <td colspan="5">
+                <input type="password" name="pw" maxlength="16" placeholder="两次密码必须一致" required="required" >
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;喜欢的颜色&emsp;</td>
+              <td colspan="5">
+                <input type="color" name="likecolor" value="#FF0000">
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;昵称&emsp;</td>
+              <td colspan="5">
+                <input type="text" name="username" maxlength="6" placeholder="请输入昵称或者真实姓名" required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;年龄&emsp;</td>
+              <td colspan="5">
+                <input type="number" name="userage" value="18" min="18" max="50" required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;出生年月&emsp;</td>
+              <td colspan="5">
+                <input type="date" name="birthday" min="1970-01-01" max="2001-01-01" value="1998-09-28" required="required" >
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;性别&emsp;</td>
+              <td>
+                <label for="man">
+                  <input type="radio" id="man" name="sex" value="男" checked="checked" >男
+                </label>
+                <label for="woman">
+                  <input type="radio" id="woman" name="sex" value="女" >女
+                </label>
+                <label for="other">
+                  <input type="radio" id="other" name="sex" value="其他" >其他
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;地区&emsp;</td>
+              <td colspan="5">
+                <input type="text" name="country" value="中国" size="4" disabled >
+                <select name="province">
+                  <option selected="selected">北京</option>
+                  <option>上海</option>
+                  <option>天津</option>
+                  <option>重庆</option>
+                  <option>河北</option>
+                  <option>山西</option>
+                  <option>吉林</option>
+                  <option>辽宁</option>
+                  <option>黑龙江</option>
+                  <option>陕西</option>
+                  <option>甘肃</option>
+                  <option>青海</option>
+                  <option>山东</option>
+                  <option>福建</option>
+                  <option>浙江</option>
+                  <option>河南</option>
+                  <option>湖北</option>
+                  <option>湖南</option>
+                  <option>江西</option>
+                  <option>江苏</option>
+                  <option>安徽</option>
+                  <option>广东</option>
+                  <option>海南</option>
+                  <option>四川</option>
+                  <option>贵州</option>
+                  <option>云南</option>
+                  <option>内蒙古</option>
+                  <option>新疆</option>
+                  <option>宁夏</option>
+                  <option>广西</option>
+                  <option>西藏</option>
+                  <option>台湾</option>
+                  <option>香港</option>
+                  <option>澳门</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;收入&emsp;</td>
+              <td colspan="5">
+                <input type="number" name="income" maxlength="10">&nbsp;万元
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;另一半年龄要求&emsp;</td>
+              <td colspan="5">
+                <table>
+                  <tr>
+                    <td>18-----30-----50</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="range" name="agerange" value="23" step="1" min="18" max="50" required="required">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;个人主页&emsp;</td>
+              <td colspan="5">
+                <input type="url" name="personurl" placeholder="空间、博客、相册URL...">
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;择偶标准&emsp;</td>
+              <td >
+                <input type="text" name="requirement" value="知书达理" list="requirement">
+                <datalist id="requirement">
+                  <option value="高大帅气">男</option>
+                  <option value="温柔贤淑">女</option>
+                  <option value="小鸟依人">女</option>
+                  <option value="有男人味">男</option>
+                  <option value="肤白貌美">女</option>
+                  <option value="有才多金">男</option>
+                  <option value="超级暖男">男</option>
+                  <option value="才貌双全">男</option>
+                  <option value="知书达理">女</option>
+                  <option value="性感可人">女</option>
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;爱好&emsp;</td>
+              <td>
+                <table>
+                  <tr>
+                    <td>体育:</td>
+                    <td>
+                      <label for="ballgame">
+                        <input name="hobby" id="ballgame"  type="checkbox" value="球类运动" checked="checked" />球类运动
+                      </label>
+                      <label for="mountaineering">
+                        <input name="hobby" id="mountaineering"  type="checkbox" value="登山运动" />登山运动
+                      </label>
+                      <label for="swimingandgotogym">
+                        <input name="hobby" id="swimingandgotogym" type="checkbox" value="游泳健身" />游泳健身
+                      </label>
+                      <label for="running">
+                        <input name="hobby" id="running" type="checkbox" value="跑步" />跑步
+                      </label>
+                      <label for="rollerskating">
+                        <input name="hobby" id="rollerskating" type="checkbox" value="轮滑" />轮滑
+                      </label>
+                      <label for="dangcing">
+                        <input name="hobby" id="dangcing" type="checkbox" value="舞蹈" />舞蹈
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>文化:</td>
+                    <td>
+                      <label for="reading">
+                        <input name="hobby" id="reading" type="checkbox" value="阅读" checked="checked" />阅读
+                      </label>
+                      <label for="singing">
+                        <input name="hobby" id="singing" type="checkbox" value="唱歌" />唱歌
+                      </label>
+                      <label for="playchess">
+                        <input name="hobby" id="playchess" type="checkbox" value="下棋" />下棋
+                      </label>
+                      <label for="musicalinstruments">
+                        <input name="hobby" id="musicalinstruments" type="checkbox" value="乐器" />乐器
+                      </label>
+                      <label for="movies">
+                        <input name="hobby" id="movies" type="checkbox" value="看电影" />看电影
+                      </label>
+                      <label for="paintingandcalligraphy">
+                        <input name="hobby" id="paintingandcalligraphy" type="checkbox" value="绘画书法" />绘画书法
+                      </label>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;是否实名认证&emsp;</td>
+              <td>
+                <input type="text" name="smrz" value="已认证"  readonly>
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;头像&emsp;</td>
+              <td colspan="5">
+                <input type="file" name="photo"  required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>&emsp;个人简介&emsp;</td>
+              <td colspan="5">
+                <textarea rows="5" cols="50" name="introduce" required="required"></textarea> 
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>&emsp;&emsp;&emsp;</td>
+              <td>
+                &emsp;&emsp;
+                <input type="submit" value="提交表单">
+                &emsp;
+                <input type="reset" value="重置表单">
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </form>
+      <br />
+      <h5>CopyRight&copy;2019&emsp;<em>Write By Mr.He</em>&trade;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="#">回到顶部</a>↑</h5>
+    </fieldset>
+    <br />
+  </body>
+</html>
